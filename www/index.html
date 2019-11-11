@@ -47,7 +47,7 @@ var msg="";
 for(var i=0; i<results.length; i++){
 var data=results[i].get("text");
 var update=results[i].get("updateDate");
-msg += data + ":" + update;
+msg += data + ":" + update+"<br>";
 }
 $("#message").html(msg);
 })
@@ -65,6 +65,7 @@ $("#message").html(msg);
     <button id="btnB" class="btn" onclick="fetch()">Fetch</button>
     <button id="btnC" class="btn" onclick="fetchAll()">Fetch All</button>
   </div>
-  <div id="message">message area</div>
+  <div id="message">message
+    area</div>
 </body>
 </html>
